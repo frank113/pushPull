@@ -29,3 +29,5 @@ hello.txt
 low.txt
 ytpme.txt
 __pycache__
+# Mac files
+.DS_Store
