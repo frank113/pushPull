@@ -37,6 +37,6 @@
                                       internal = TRUE, 
                                       overwrite = TRUE))
   ## print("We made it to 40")
-  return()
+  invisible()
 }
 
