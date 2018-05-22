@@ -34,8 +34,7 @@ push <- function(files) {
 
   invisible(NULL)
 }
-
-#' @title Push and Pull Project
+#' @title Push
 #' 
 #' @name push
 #' 
@@ -50,9 +49,6 @@ push <- function(files) {
 #'    particular student.  The student pushes the file with push("myFile.R")
 #'    and you pull it with pull("myFile.R", who="studentId").  Now you can
 #'    open the file in your current R session.
-#' 2. Students are attempting to code something, and you want everyone to
-#'    "catch up" to your version.  Run push("myfile.R").  Each student can
-#'    then run pull("myFile.R"), and open your version on their computer.
 #' 
 #' @details:
 #' Students use push(files) to upload file(s) from their computer to
