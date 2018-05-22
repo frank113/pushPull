@@ -33,6 +33,9 @@
   dtf <- data.frame(key = key, 
                     value = value)
   ## print("We made it to 35")
+  if (file.exists("sysdata.rda")) {
+    file.remove("sysdata.rda")
+  }
   suppressMessages(devtools::use_data(dtf, 
                                       internal = TRUE, 
                                       overwrite = TRUE))
