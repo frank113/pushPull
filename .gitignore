@@ -23,11 +23,19 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 .Rproj.user
+
+# Specific to this project
 pushPull.Rproj
 .spyproject
 hello.txt
 low.txt
 ytpme.txt
 __pycache__
+
 # Mac files
 .DS_Store
+
+# sysdata.rda that must be re-created every time
+R/sysdata.rda
+R/zzz.R
+R/reset.R
