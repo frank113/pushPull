@@ -2,10 +2,10 @@ push <- function(files) {
   if (length(files) == 0 || !is.character(files))
     stop("'files' must be a string vector")
 
-#   sftpSite = dtf$value[dtf$key=="sftpSite"]
-#   sftpName = dtf$value[dtf$key=="sftpName"]
-#   sftpPassword = dtf$value[dtf$key=="sftpPassword"]
-#   userName = dtf$value[dtf$key=="userName"]
+  sftpSite = dtf$value[dtf$key=="sftpSite"]
+  sftpName = dtf$value[dtf$key=="sftpName"]
+  sftpPassword = dtf$value[dtf$key=="sftpPassword"]
+  userName = dtf$value[dtf$key=="userName"]
 
   # Check files
   fid = file.info(files)$isdir
