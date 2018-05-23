@@ -2,3 +2,4 @@
 
 export(pull)
 export(push)
+export(setup)
