@@ -12,4 +12,6 @@ LazyData: true
 Depends: 
   R (>= 3.0.0),
   RCurl
+Remotes:
+  cran/RCurl
 RoxygenNote: 6.0.1
