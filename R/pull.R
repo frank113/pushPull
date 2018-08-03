@@ -1,7 +1,7 @@
 pull <- function(files, who = NULL) {
   if (length(files) == 0 || !is.character(files))
     stop("'files' must be a string vector")
-  print("Made it to 4")
+  ## print("Made it to 4")
   sftpSite <- dtf$value[dtf$key == "sftpSite"]
   sftpName <- dtf$value[dtf$key == "sftpName"]
   sftpPassword <- dtf$value[dtf$key == "sftpPassword"]

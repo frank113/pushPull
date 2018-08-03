@@ -19,12 +19,13 @@ push <- function(files) {
   
   # Upload files
   ## Frank removed this
-  # if (!require(RCurl, quietly=TRUE, warn.conflicts=FALSE))
-  #   stop("install 'RCurl' and try again")
+  if (!require(RCurl, quietly=TRUE, warn.conflicts=FALSE))
+    stop("install 'RCurl' and try again")
   front = paste0("sftp://", sftpName, ":", sftpPassword, "@", sftpSite)
   opts = list(ftp.create.missing.dirs=TRUE)
   for (f in files) {
     fRemote = file.path(userName, basename(f))
+    print(file.path(front, fRemote))
     rtn = try(RCurl::ftpUpload(f, file.path(front, fRemote), .opts=opts), silent=TRUE)
     if (is(rtn, "try-error")) {
       cat("Upload of", f, "failed.\n")
